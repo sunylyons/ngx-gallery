@@ -21,21 +21,23 @@ import { CommonModule } from '@angular/common';
 import { Platform } from '@angular/cdk/platform';
 import {
   from,
-  distinctUntilChanged,
   fromEvent,
-  mergeMap,
-  startWith,
-  tap,
-  debounceTime,
-  filter,
-  takeUntil,
-  switchMap,
   Observable,
   Subject,
   Subscriber,
   EMPTY,
   animationFrameScheduler
 } from 'rxjs';
+import {
+  distinctUntilChanged,
+  mergeMap,
+  startWith,
+  tap,
+  debounceTime,
+  filter,
+  takeUntil,
+  switchMap
+} from 'rxjs/operators';
 import { Gallery } from '../services/gallery.service';
 import { GalleryState, GalleryError } from '../models/gallery.model';
 import { GalleryConfig } from '../models/config.model';
