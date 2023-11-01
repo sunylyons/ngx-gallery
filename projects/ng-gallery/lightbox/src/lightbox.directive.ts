@@ -1,5 +1,6 @@
 import { Directive, Input, ElementRef, OnInit, OnDestroy, Renderer2 } from '@angular/core';
-import { fromEvent, tap, SubscriptionLike, Subscription } from 'rxjs';
+import { fromEvent, SubscriptionLike, Subscription } from 'rxjs';
+import { tap } from 'rxjs/operators';
 import { Lightbox } from './lightbox.service';
 
 @Directive({
