@@ -13,7 +13,8 @@ import {
 } from '@angular/core';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { Gallery, GalleryRef, ImageItem, GalleryComponent, GalleryState, GalleryItem } from 'ng-gallery';
-import { Subject, Subscription, from, tap, map, switchMap, finalize, debounceTime, EMPTY } from 'rxjs';
+import { Subject, Subscription, from, EMPTY } from 'rxjs';
+import { tap, map, switchMap, finalize, debounceTime } from 'rxjs/operators';
 
 import { Lightbox } from './lightbox.service';
 
