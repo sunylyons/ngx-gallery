@@ -18,7 +18,8 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Platform } from '@angular/cdk/platform';
-import { Subject, debounceTime, takeUntil, tap } from 'rxjs';
+import { Subject } from 'rxjs';
+import { debounceTime, takeUntil, tap } from 'rxjs/operators';
 import { GalleryConfig } from '../models/config.model';
 import { GalleryState, GalleryError } from '../models/gallery.model';
 import { ThumbnailsPosition, ThumbnailsView } from '../models/constants';
